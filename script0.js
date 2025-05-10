@@ -16,5 +16,5 @@ function getRandomColor() {
 
 
 button.onclick = () => {
-window.location.href = "../Main-Project/index1.html";
+window.location.href = "index1.html";
 };
