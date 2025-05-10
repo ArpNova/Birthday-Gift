@@ -1,0 +1,166 @@
+
+    body {
+      margin: 0;
+      /* background: #dff6ff; */
+      background-color: black;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    #btn-con{
+      border-radius: 10px;
+      margin: 10px;
+      
+    }
+
+
+
+    
+
+
+
+
+
+    #birthday-text {
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+      color: #ff69b4;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      z-index: 10;
+    }
+    /* #cake-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+      z-index: 10;
+    }
+    
+    /* Cake styling (simplified version for clarity) */
+    /* .cake {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+    }
+    
+    /* Add your actual cake styles from the markdown file here — icing, layers, candle, flame, etc. */
+    
+    
+#cake_{
+  margin-top: 180px;
+  margin-left: 5px;
+}
+
+
+    
+    #cake-container{
+      display: none;
+      animation: float 3s ease-in-out infinite;
+      margin-top: 280px;
+      margin-left: 170px;
+
+    }
+    #birthday-text{
+      margin-top: 90px;
+      font-size: 80px;
+      font-style: italic;
+    }
+
+
+    #para{
+      color: aliceblue;
+      font-size: 25px;
+      margin-top: 100px;
+      margin-left: 219px;
+      display: none;
+    }  
+     
+#me{
+  font-size: 15px;
+  color: white;
+  margin-top: 570px;
+  margin-left: 830px;
+  display: none;
+  
+}
+
+#stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* allows clicking through stars */
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0.5px white;
+  animation: twinkle 2s infinite ease-in-out;
+  opacity: 0.4;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+
+
+    @keyframes float {
+      0%   { transform: translateY(0px); }
+      50%  { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+
+
+
+
+
+
+
+
+
+    
+
+    .balloon-container {
+      position: absolute;
+      bottom: -70vw; /* start off-screen */
+      animation: floatUp 3.4s ease-in forwards;
+      will-change: transform;
+    }
+
+    .balloon {
+      width: 30vw; /* responsive size */
+      aspect-ratio: 2 / 3;
+    }
+
+    .balloon svg {
+      width: 100%;
+      height: auto;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-200vh);
+        opacity: 0;
+      }
+    }
+  
