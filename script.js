@@ -33,7 +33,7 @@ await PIXI.Assets.load("flower4.png");
 const flowerTexture = PIXI.Texture.from("flower4.png");
 
 // Constants
-const MAX_FLOWERS = 400;
+const MAX_FLOWERS = 450;
 const FLOWER_SIZE = 50;
 const SPAWN_INTERVAL = 0.15;0 // seconds between flower spawns
 
@@ -250,3 +250,4 @@ setTimeout(() => {
 //       });
 //   });
 // });
+
